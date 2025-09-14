@@ -14,7 +14,7 @@ This is model is not intended for production use as it is created for educationa
 The purpose of the project is to illustrate the ability to deploy a ML Model using FastAPI.
 
 ## Training Data
-The model was trained on data obtains from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/20/census+income). The data is located in >data/census.csv.   
+The model was trained on data obtains from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/20/census+income). The data is located in data/census.csv.   
 The entire dataset was used for training and evaluation.
 
 ## Evaluation Data
@@ -26,7 +26,7 @@ The trained model performance metrics were computed as follows:
 
 Precision: 0.7816 | Recall: 0.6207 | F1: 0.6919
 
-The evaluation based of the various model slices is recorded in the following file: >slice_output.txt
+The evaluation based of the various model slices is recorded in the following file: slice_output.txt
 
 ## Ethical Considerations
 The model most likely contains bias based on the skewing found within race and sex, with white males being largely represented more than other races and sexes.   
