@@ -64,12 +64,12 @@ async def post_inference(data: Data):
         "native-country",
     ]
     data_processed, _, _, _ = process_data(
-        X=data,
+        data,
         categorical_features=cat_features,
         label=None,
         training=False,
         encoder=encoder,
         lb=None
     )
-    _inference = None # your code here to predict the result using data_processed
+    _inference = (model, data_processed) # your code here to predict the result using data_processed
     return {"result": apply_label(_inference)}
