@@ -37,4 +37,4 @@ posted = requests.post(url, json=data)
 # TODO: print the status code
 print(f"Status Code: {posted.status_code}")
 # TODO: print the result
-print(f"Result: {posted.text}")
+print(f"Result: {posted.json}")
