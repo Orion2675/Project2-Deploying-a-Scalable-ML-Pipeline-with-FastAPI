@@ -5,7 +5,7 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
 ## Model Details
 * Uses RandomForestClassifier from scikit-learn v1.5.1.
 * Default Hyperparameters were used.
-* min_samples_split was changed from default value ot 2 to 30. 
+* min_samples_split was changed from default value of 2 to 10. 
 
 ## Intended Use
 The intended use of this model to is predict whether or not a persons income exceeds 50K a year based on US Census data.    
@@ -24,7 +24,7 @@ The model was trained by splitting the data >census.csv into separate train and 
 The following metrics were used for evaluation: Precision, Recall, and f1-score.    
 The trained model performance metrics were computed as follows:   
 
-Precision: 0.7816 | Recall: 0.6207 | F1: 0.6919
+Precision: 0.7721 | Recall: 0.6335 | F1: 0.6960
 
 The evaluation based of the various model slices is recorded in the following file: slice_output.txt
 
