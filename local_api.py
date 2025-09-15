@@ -31,8 +31,8 @@ data = {
 }
 
 # TODO: send a POST using the data above
-p = url+"/data"
-post = requests.post(p, json=data) 
+url = "http://127.0.0.1:8000/data/"
+post = requests.post(url, json=data) 
 
 # TODO: print the status code
 print(post.status_code)
