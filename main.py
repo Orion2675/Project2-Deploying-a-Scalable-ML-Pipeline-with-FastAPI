@@ -33,7 +33,7 @@ path = "../Project2-Deploying-a-Scalable-ML-Pipeline-with-FastAPI/model/model.pk
 model = load_model(path)
 
 # TODO: create a RESTful API using FastAPI
-app = FastAPI
+app = FastAPI()
 
 # TODO: create a GET on the root giving a welcome message
 @app.get("/")
@@ -64,9 +64,9 @@ async def post_inference(data: Data):
         "native-country",
     ]
     data_processed, _, _, _ = process_data(
-        data,
+        X=data,
         categorical_features=cat_features,
-        label=None
+        label=None,
         training=False,
         encoder=encoder,
         lb=None
