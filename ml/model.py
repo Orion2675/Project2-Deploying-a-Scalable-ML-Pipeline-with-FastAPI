@@ -21,7 +21,7 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
     # Use RandomForrectClassifier for model.
-    model = RandomForestClassifier(min_samples_split=30)
+    model = RandomForestClassifier(min_samples_split=2)
     model.fit(X_train, y_train)
     return model
 
